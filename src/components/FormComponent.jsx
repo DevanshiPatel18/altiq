@@ -87,7 +87,7 @@ const AddNews = () => {
   return (
     <div className="submit-form d-flex justify-content-center">
         <div className="m-4 col-md-5">
-            <form action="POST">
+         
           <div className="form-group">
             <label htmlFor="title">Title</label>
             <input
@@ -131,10 +131,10 @@ const AddNews = () => {
             <input className="form-control" type="text" name="publishedBy" id="publishedBy" value={news.publishedBy} onChange={handleInputChange} required/>
           </div>
 
-          <button onSubmit={saveNew} className="btn btn-success">
+          <button onClick={saveNew} className="btn btn-success">
             Submit
           </button>
-          </form>
+        
         </div>
     
     </div>
